@@ -21,9 +21,9 @@
 # print(sqa(your_value))
 
 
-'''a = ["abc","def","ghi"]
+a = ["abc","def","ghi"]
 
-def lis(val): 
+'''def lis(val): 
     listo = []
     for i in val: 
         listo.append(i[0])
@@ -52,7 +52,17 @@ print(filter_even(10))'''
 
 # print(filter(10))
 
-def nested(vul): 
+'''def nested(vul): 
     return[[i for i in range(1,vul+1)]for k in range(1,vul+1)]
 
-print(nested(3))
+print(nested(3))'''
+
+
+
+
+
+
+def rev(val): 
+    return[i[::-1] for i in val]
+
+print(rev(a))
