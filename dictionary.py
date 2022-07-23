@@ -31,7 +31,7 @@ print(any_dict["others"]["fav_programming"])'''
 
 # Task
 
-dict1 = {
+'''dict1 = {
     "f_name":"Aryama",
     "s_name":"Sharma",
     "age":19,
@@ -40,7 +40,7 @@ dict1 = {
     "residence":"Kathmandu"
 
 
-}
+}'''
 
 # print(dict1["movie"][1])
 
@@ -138,7 +138,7 @@ print(days.get("day3"))
 # if dict1.get("residence"): 
 #     print("Present")
 # else: 
-#     print("Not Present")
+#     print("Not Present")'''
 
 
 
@@ -146,16 +146,16 @@ print(days.get("day3"))
 
 # user_info = {"f_name":"Aryama","l_name":"Sharma", "age":19,"age":1}
 # print(user_info.get("age")) 
-# '''
 
 
 
 
 
-num = int(input("Enter a number")) 
+
+'''num = int(input("Enter a number")) 
 
 def cube(val): 
-    ans = val**3
+    
     dictionary = {}
        
 
@@ -172,4 +172,4 @@ def count(name):
         diction[char] = name.lower().count(char)
     return diction 
 
-print(count(nam))
+print(count(nam))'''
