@@ -27,6 +27,8 @@ for i in list_of_names:
 
 # Map Functins (Map ma ek choti matra loop chalaunu milcha)
  
+
+
 lists = [1,2,3,4]   # Iterables ( Loop chalaune na sakine is called iterables)
 '''def square(value): 
     return value**2 '''
@@ -125,12 +127,12 @@ print(q2(q_list))'''
 
 # Any and all functions
 
-num_list1 = [2,4,6,8,10] 
-num_list2 = [1,3,5,7,9]
+# num_list1 = [2,4,6,8,10] 
+# num_list2 = [1,3,5,7,9]
 
-print(any(list(map(lambda a: a%2==0, num_list1))))
+# print(any(list(map(lambda a: a%2==0, num_list1))))
 
-def sum(*args): 
+'''def sum(*args): 
     if all([(type(args)==int or type(args)==float) for arg in args]): 
         total = 0 
         for num in args:
@@ -139,4 +141,39 @@ def sum(*args):
     else: 
         return "Input a float or an integer value" 
 
-print(type(sum(1,3.0)))
+print(type(sum(1,3.0)))'''
+
+
+def any_fun(string): 
+    return len(string)
+     
+names = ["Apple","Joy","om","ram kumar"]
+names2 = [1,2,3,4,5,6,7,8,9]
+print(max(names,key = any_fun))
+print(max(names2)) 
+
+# Using Lambda 
+
+print(max(names,key = lambda names: len(names)))
+
+#1 find the name of highest marks:
+student1 = [{"name":"Ram","score":60,"age":19},
+        {"name":"kiran","score":70,"age":20},
+        {"name":"om","score":80,"age":21}
+    ]
+# hw
+student2 = { 
+    "Ram":{"score":60,"age":19},
+    "kiran":{"score":70,"age":20},
+    "om":{"score":80,"age":21}
+    }
+
+
+print(max(student1, key = lambda dict_items: max(dict_items.items()))["name"]) 
+
+
+
+sorted_list = sorted(student1, key = lambda dict_items: dict_items["name"],reverse = True)
+print(sorted_list)
+
+
